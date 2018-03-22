@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,75 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nrv-Ln-k37">
-                                <rect key="frame" x="0.0" y="40" width="375" height="85"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kID-l3-iqg">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzS-WB-3K6">
-                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="30"/>
-                                                <state key="normal" title="Clear"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOY-dv-r1X">
-                                                <rect key="frame" x="127.5" y="0.0" width="120" height="30"/>
-                                                <state key="normal" title="Cancel"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-dg-Ifp">
-                                                <rect key="frame" x="255.5" y="0.0" width="119.5" height="30"/>
-                                                <state key="normal" title="Save"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u23-IH-ebf">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svL-2i-HfZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="p5H-RF-f8i"/>
-                                                    <constraint firstAttribute="width" constant="50" id="u7f-wG-rYk"/>
-                                                </constraints>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-Cg-pJ7">
-                                                <rect key="frame" x="345" y="0.0" width="30" height="50"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="svL-2i-HfZ" secondAttribute="bottom" constant="1" id="G3r-SO-eQu"/>
-                                            <constraint firstItem="svL-2i-HfZ" firstAttribute="top" secondItem="u23-IH-ebf" secondAttribute="top" constant="1" id="KJw-t3-Nsp"/>
-                                            <constraint firstItem="svL-2i-HfZ" firstAttribute="leading" secondItem="u23-IH-ebf" secondAttribute="leading" constant="1" id="X08-i2-oEK"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl6-v6-ogG">
-                                <rect key="frame" x="16" y="145" width="55" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOi-4n-IOL">
-                                <rect key="frame" x="321" y="145" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="nrv-Ln-k37" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4Vc-cw-B71"/>
-                            <constraint firstItem="sl6-v6-ogG" firstAttribute="top" secondItem="u23-IH-ebf" secondAttribute="bottom" constant="20" id="Pvk-qq-SLm"/>
-                            <constraint firstItem="sl6-v6-ogG" firstAttribute="width" secondItem="lOi-4n-IOL" secondAttribute="width" multiplier="2" priority="1" constant="8" id="Ruq-2c-IKN"/>
-                            <constraint firstItem="nrv-Ln-k37" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SPM-bk-Fwl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lOi-4n-IOL" secondAttribute="trailing" constant="8" id="hbK-bv-7CA"/>
-                            <constraint firstItem="lOi-4n-IOL" firstAttribute="top" secondItem="u23-IH-ebf" secondAttribute="bottom" constant="20" id="x8u-q9-Vgn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nrv-Ln-k37" secondAttribute="trailing" id="zCH-SR-C3n"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
