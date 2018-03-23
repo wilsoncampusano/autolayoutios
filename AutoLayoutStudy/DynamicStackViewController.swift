@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  DynamicStackViewController.swift
 //  AutoLayoutStudy
 //
-//  Created by Wilson Campusano on 3/22/18.
+//  Created by Wilson Campusano on 3/23/18.
 //  Copyright © 2018 Wilson Campusano. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DynamicStackViewController: UIViewController{
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		let insets = UIEdgeInsets(top: 20.0, left: 0.0,bottom: 0.0,right: 0.0)
@@ -34,8 +34,8 @@ class ViewController: UIViewController {
 		stack?.insertArrangedSubview(newView, at: index)
 		
 		UIView.animate(withDuration: 0.25, animations:{ () -> Void in
-			newView.isHidden = false
-			scroll?.contentOffset = offset
+												newView.isHidden = false
+												scroll?.contentOffset = offset
 		})
 	}
 	
@@ -82,6 +82,4 @@ class ViewController: UIViewController {
 	private func randomHexQuad() -> String{
 		return NSString(format:"%X%X%X%X", arc4random() % 16,arc4random() % 16,arc4random() % 16,arc4random() % 16) as String
 	}
-
 }
-
